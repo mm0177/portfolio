@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0db91cd6a3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo (1).png" alt=" logo" class="logo">
+                <ul id="menubar"> 
+                    <li>
+<a href="#header">Home</a></li>
+<li><a href="#about">About</a></li>
+
+<li><a href="#portfolio">Portfolio</a></li>
+<li><a href="#contact">Contact</a></li>
+<i class="fa-solid fa-xmark mark" onclick="closemenu()"></i>
+
+
+                
+            </ul>
+            <i class="fa-solid fa-bars mark" onclick="openmenu()"></i>
+               
+            </nav>
+            <div class="header-text">
+                
+                <h1>Hi,I'm <span>M.MEYYAPPAN</span></h1>
+            </div>
+            <div id="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="about-col-1">
+                            <img src="images/photomy.png">
+                        </div>
+                        <div class="about-col-2">
+                            <h1 class="title">About me</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, assumenda, beatae sapiente totam exercitationem iure veniam inventore dolore voluptatem atque perferendis, dolor quia eveniet optio quo vel deserunt pariatur facilis.</p>
+                            <div class="skills-main">
+                                <p class="skills active-part" onclick="linkopen('skills')">Skills </p>
+                                <p class="skills" onclick="linkopen('experience')">Experience</p>
+                                <p class="skills" onclick="linkopen('Education')">Education</p>
+
+                            </div>
+                            <div class="contents active-part1" id="skills">
+                                <ul>
+                                    <li>
+                                        <span>Web Developer</span></li>
+                                       <li> <span> UI/UX Designer</span></li>
+
+                                    
+                                </ul>
+
+                            </div>
+                            <div class="contents" id="experience">
+                                <ul>
+                                    <li><span>June 2023-August 2023 </span><br><span>Web Developer Intern</span></spn><br><span>HDLC TECHNOLOGIES-CHENNAI</span></li>
+                                </ul>
+
+
+                            </div>
+                            <div class="contents" id="Education">
+                                <ul>
+                                    <li><span>2008-2022</span><br><span>Delhi Public School Bhilai</span></li>
+                                    <li><span>2022-2026</span><br>S.R.M INSTITUTE OF SCIENCE AND TECHNOLOGY</li>
+                                </ul>
+
+                            </div>
+                        </div>
+                        <div id="portfolio">
+                            <div class="container">
+                                <h1 class="work">My Work</h1>
+                                <div class="work-list">
+                                    <div class="w">
+                                        <img src="images/cal.png">
+                                        <div class="des">
+                                            <h3>A Calculator</h3>
+                                            <p>An app that lets you solve the problems easily</p>
+                                            <a href="https://calculator.meyyappanm.repl.co/"><i class="fa-solid fa-up-right-from-square "></i></a>
+                                        </div>
+        
+                                    </div>
+                                    <div class="w">
+                                        <img src="images/music.png">
+                                        <div class="des">
+                                            <h3>An Music Player</h3>
+                                            <p>An app that lets you listen to music easily</p>
+                                            <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                                            
+                                        </div>
+        
+                                    </div>
+                                    </div>
+                            </div>
+                            
+
+                        </div>
+                        
+                    </div>
+                </div>
+                <a href="#" class="btn btn1"> View More</a>
+                <div id="contact">
+                    <div class="container">
+                        <div class="row">
+                            <div class="contact-left">
+                                <h1 class="sub-title">Contact Me</h1>
+                                <p><i class="fa-solid fa-envelope"></i>mm0177@srmist.edu.in</p>
+                                <p><i class="fa-solid fa-phone"></i>7647932641</p>
+                                <div class="social">
+                                    <a href="https://www.linkedin.com/in/meyyappan-m-48274824b"><i class="fa-brands fa-linkedin"></i></a>
+                                    <a href="https://whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
+                                    <a href="https://facebook.com/"><i class="fa-brands fa-twitter"></i></a>
+                                    
+                                </div>
+                                <a href="images/my-cv.pdf" download class=" btn btn2">Download CV</a>
+                            </div>
+                            <div class="contact-right">
+                                <form>
+                                    <input type="text" name="Name" placeholder="Enter your name" required>
+                                    <input type="email" name="email"placeholder="Enter your email" required>
+                                    <textarea name="message" rows="6" palceholder="your message"></textarea>
+                                    <button type="submit" class="btn2">Submit </button>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>Copyright mmtg <i class="fa-regular fa-copyright"></i>Made by M.MEYYAPPAN</p>
+    
+            </div>
+
+        </div>
+        
+    </div>
+    <script src="script.js"></script> 
+  
+</body>
+</html>
