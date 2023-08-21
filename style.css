@@ -13,9 +13,10 @@ body{
 }
 #header{
     width:100%;
-    height:60vh;
+    height:50vh;
     background-image: url(images/myimg1.jpg);
     background-size: 40%;
+    
     background-position:right;
     background-repeat: no-repeat;
     mix-blend-mode:normal;
@@ -151,6 +152,7 @@ position: relative;
     border-radius: 10px;
     position: relative;
     overflow: hidden;
+    margin-left: 100px;
 
 }
 .w img{
@@ -297,12 +299,123 @@ form .btn2{
 nav .mark{
     display:none;
 }
+.timeline{
+    position:relative;
+    max-width: 1000px;
+    margin:100px auto;
+    
+            
+
+}
+.container1{
+    padding: 10px 40px;
+    position: relative;
+    width:70%;
+    animation: movedown 1s linear forwards;
+    opacity: 0;
+
+
+}
+@keyframes movedown{
+    0%{
+        opacity: 1;
+        transform: translateY(-30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+
+    }
+}
+.container1:nth-child(1){
+    animation-delay: 0s;
+
+}
+.container1:nth-child(2){
+    animation-delay: 1s;
+
+}
+.container1:nth-child(3){
+    animation-delay: 2s;
+
+}
+.container1:nth-child(4){
+    animation-delay: 3s;
+
+}
+.textbox{
+    padding:20px 30px;
+    background: #fff;
+    position: relative;
+    border-radius: 6px;
+    font-size: 12px;
+
+
+}
+.leftcontainer{
+    left:0;
+}
+.rightcontainer{
+    left:70%;
+}
+.container1 img{
+    position: absolute;
+    width:40px;
+    border-radius: 50%;
+    right:-20px;
+    top:32px;
+    z-index:10;
+}
+.rightcontainer img{
+    left:-20px;
+}.timeline::after{
+    content: ' ';
+    position:absolute;
+    width:4px;
+    height: 100%;
+    background: #fff;
+    top:0;
+    left:70%;
+    margin:-3px;
+    z-index: -1;
+    animation:moveline 6s linear forwards;
+}
+@keyframes moveline{
+    0%{
+        height:0;
+    }
+    100%{
+        height:90%;
+    }
+}
+.left-arrow{
+    height:0;
+    width:0;
+    position:absolute;
+    top:28px;
+    z-index:1;
+    border-top:15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid #fff;
+    right:-15px
+}
+.right-arrow{
+    height:0;
+    width:0;
+    position:absolute;
+    top:28px;
+    z-index:1;
+    border-top:15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid #fff;
+    left:-15px
+}
 @media only screen and (max-width:600px){
     #header{
         background-image: url(images/myimg1.jpg);
 
     }
-    .header-text{
+    .header-box{
         margin-top:100%;
         font-size:15px;
 
@@ -373,5 +486,19 @@ nav .mark{
 .copyright{
     font-size: 35px;
 }
+.timeline{
+    margin:50px auto;
+
+}
+.timeline::after{
+    left:31px;
+}
+.container1{
+    width: 100%;
+    padding-left: 80px;
+    padding-right: 25px;
+
+}
+
 }
  
