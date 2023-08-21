@@ -19,6 +19,7 @@
 
 <li><a href="#portfolio">Portfolio</a></li>
 <li><a href="#contact">Contact</a></li>
+
 <i class="fa-solid fa-xmark mark" onclick="closemenu()"></i>
 
 
@@ -29,7 +30,7 @@
             </nav>
             <div class="header-text">
                 
-                <h1>Hi,I'm <span>M.MEYYAPPAN</span></h1>
+                <h1>Hi, <span>I'm</span> <span>M.MEYYAPPAN</span></h1>
             </div>
             <div id="about">
                 <div class="container">
@@ -39,7 +40,7 @@
                         </div>
                         <div class="about-col-2">
                             <h1 class="title">About me</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, assumenda, beatae sapiente totam exercitationem iure veniam inventore dolore voluptatem atque perferendis, dolor quia eveniet optio quo vel deserunt pariatur facilis.</p>
+                            <p>Hi I am M.Meyyappan pursuing Btech in SRM University. I find myself good in coding having knowledege of c and c++ as well as in web development where i have made different websites.</p>
                             <div class="skills-main">
                                 <p class="skills active-part" onclick="linkopen('skills')">Skills </p>
                                 <p class="skills" onclick="linkopen('experience')">Experience</p>
@@ -70,6 +71,67 @@
                                 </ul>
 
                             </div>
+                        </div>
+                        <div class="timeline">
+                            <div class="container1 leftcontainer">
+                                <img src="pngimg.com - dot_PNG3.png">
+
+                                <div class="textbox">
+                                    <h2>
+                                        HTML
+                                    </h2>
+                                    <small>1st year</small>
+                                    <p>Learnt the basics of html and the working of the browser</p>
+                                    <span class="left-arrow"></span>
+
+
+
+                                </div>
+                            </div>
+                            <div class="container1 rightcontainer">
+                                <img src="pngimg.com - dot_PNG3.png">
+                                <div class="textbox">
+                                    <h2>
+                                        CSS
+                                    </h2>
+                                    <small>1st year</small>
+                                    <p>Learnt how to design a page and beautify it</p>
+                                    <span class="right-arrow"></span>
+                                    
+
+
+
+                                </div>
+                            </div>
+                            <div class="container1 leftcontainer">
+                                <img src="pngimg.com - dot_PNG3.png">
+                                <div class="textbox">
+                                    <h2>
+                                        Javascript
+                                    </h2>
+                                    <small>2nd year</small>
+                                    <p>Started learning from basics and mastered it and amde different websites</p>
+                                    <span class="left-arrow"></span>
+
+
+
+                                </div>
+                            </div>
+                            <div class="container1 rightcontainer">
+                                <img src="pngimg.com - dot_PNG3.png">
+                                <div class="textbox">
+                                    <h2>
+                                        HDLC Technologies
+                                    </h2>
+                                    <small>2nd year</small>
+                                    <p>Worked as an intern for two months and gained agood experience</p>
+                                    <span class="right-arrow"></span>
+
+
+
+                                </div>
+                            </div>
+
                         </div>
                         <div id="portfolio">
                             <div class="container">
@@ -119,10 +181,10 @@
                                 <a href="images/my-cv.pdf" download class=" btn btn2">Download CV</a>
                             </div>
                             <div class="contact-right">
-                                <form>
+                                <form name="submit-to-google-sheet">
                                     <input type="text" name="Name" placeholder="Enter your name" required>
-                                    <input type="email" name="email"placeholder="Enter your email" required>
-                                    <textarea name="message" rows="6" palceholder="your message"></textarea>
+                                    <input type="email" name="Email"placeholder="Enter your email" required>
+                                    <textarea name="Message" rows="6" palceholder="your message"></textarea>
                                     <button type="submit" class="btn2">Submit </button>
 
                                 </form>
@@ -141,6 +203,17 @@
         
     </div>
     <script src="script.js"></script> 
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbym77zWfO7OnvIBsqJj8xZcDx0EGTINV6JiV5YStE8ZYK7LJeu-TKE1u5swQJG6am84/exec'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
   
 </body>
 </html>
